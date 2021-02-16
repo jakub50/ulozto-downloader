@@ -83,7 +83,7 @@ class AutoReadCaptcha:
         self.print_func = print_func
 
     def __call__(self, img_url, print_func):
-        import tflite_runtime.interpreter as tflite
+        import tensorflow.lite as tflite
         import numpy as np
 
         print_func("Auto solving CAPTCHA")
